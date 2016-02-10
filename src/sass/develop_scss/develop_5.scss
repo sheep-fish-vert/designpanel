@@ -44,3 +44,29 @@
 
     }
 /*END header*/
+/*colection-1*/
+    .colection1{
+        .colection-wrap{
+            .big-preview{
+                h2{font:400 48px/48px 'ArialNarrow'; color:#c0c0c0;}
+                p{font:400 14px/14px 'AvenirNext'; color:#3b3b3b;}
+            }
+            .items-wrap{width:100%}
+            .item{display: block; margin-bottom: 20px; padding: 4px;  float: left; border:1px solid #000; border-bottom-width: 0;
+                .thumbs{max-width:170px; width: 100%; cursor:pointer;
+                    .img{height: 133px; overflow: hidden; position: relative; margin-bottom: 5px;
+                        &:before{content: ''; display: block;position: absolute; width: 100%; height:100%; background-color: rgba(0,0,0,0.7); top:0; left:0; transform: scale(0,0); transition: transform 300ms;}
+                        &:after{content: ''; width: 40px; height: 40px; display: block; background-image: url(../images/loop.png); position: absolute; left:calc(50% - 20px); top:calc(50% - 20px);}
+                        &:hover{&:before{transform: scale(1,1);}}
+                    }
+                    .txt{ height: 20px; width: 100%; background-color: #8e867b; text-align: center;
+                        p{font:500 14px/14px 'AvenirNext'; color:#fff; text-transform: uppercase;}
+                    }
+                }
+                .description{}
+            }
+
+
+        }
+    }
+/*END colection-1*/
