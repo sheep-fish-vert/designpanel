@@ -16,3 +16,11 @@
     }
 
 /* /breadcrumbs */
+
+/* titles */
+
+    .title{font-weight: 800;font-size: 24px;color:#070707;margin-bottom: 10px;
+        &.title-uppercase{font-size: 16px;text-transform: uppercase;font-weight: 500;}
+    }
+
+/* /titles */
