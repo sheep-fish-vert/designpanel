@@ -13,15 +13,17 @@
 
 /* base styles*/
 *{box-sizing:border-box;outline:none;}
-html{height:100%;font-size:1px;}
-body{min-height:100%;width:100%;font-family:arial,sans-serif;background:#fff;color:#3d3d3d;position:relative;font-size: 16px;}
+html{height:100%;}
+body{min-height:100%;width:100%;font-family:'AvenirNext',arial;background:#fff;color:#140f0c;position:relative;font-size: 16px;}
 img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* /base styles */
 
 /* wraps styling*/
 
+
 .mbox{max-width:1070px;width:100%;margin:0 auto;position:relative;z-index:1;padding: 0 10px;}
+
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 .main:after{clear: both;content: '';display: block;}
 .aside{float: left;padding-right: 3%;width: 29%;}

@@ -17,6 +17,17 @@
 /* fonts */
 
 @include font-face('slick');
-@include font-face('bootstrap-icon', 'glyphicons-halflings-regular');
+@include font-face('AvenirNext', 'AvenirNext-Bold', 700);
+@include font-face('AvenirNext', 'AvenirNext-BoldItalic', 700, italic);
+@include font-face('AvenirNext', 'AvenirNext-DemiBold', 800);
+@include font-face('AvenirNext', 'AvenirNext-DemiBold', 800, italic);
+@include font-face('AvenirNext', 'AvenirNext-Heavy', 900);
+@include font-face('AvenirNext', 'AvenirNext-HeavyItalic', 900, italic);
+@include font-face('AvenirNext', 'AvenirNext-Italic', 400, italic);
+@include font-face('AvenirNext', 'AvenirNext-MediumItalic', 500, italic);
+@include font-face('AvenirNext', 'AvenirNext-Medium', 500);
+@include font-face('AvenirNext', 'AvenirNext-Regular', 400);
+@include font-face('AvenirNext', 'AvenirNext-UltraLight', 300);
+@include font-face('AvenirNext', 'AvenirNext-UltraLightItalic', 300, italic);
 
 /* /fonts*/
