@@ -46,3 +46,57 @@
     }
 
 /* /text-block */
+
+/* main-texter */
+
+    .main-texter{padding: 40px 0 40px 0;background-color: #faf8f6;
+        .title{margin-bottom: 35px;}
+        .text-block{font-weight: 400;line-height: 22px;}
+        .main-texter-main{display: inline-block;width: calc(100% - 250px);vertical-align: top;}
+        .main-texter-images{display: inline-block;width: 240px;vertical-align: top;
+            .main-texter-image-wrap{margin-bottom: 50px;text-align: right;
+                &:last-child{margin-bottom: 0;}
+            }
+        }
+    }
+
+/* /main-texter */
+
+/* footer */
+
+    .footer{
+        .footer-wrap{border-top: 4px solid #080707;padding:25px 0 25px 0;background-color:#fff;}
+        .footer-left{float: right;width: calc(100% - 300px);font-weight: 400;font-size: 12px;color:#000000;text-align: right;
+            .footer-contacts{display: inline-block;vertical-align: top;margin-right: 25px;
+                &:last-child{margin-right: 0;}
+                a{text-decoration: none;color:#000000;position: relative;transition:color 300ms ease;
+                    &:after{content: '';display: block;position: absolute;top:100%;left:0;height: 1px;background-color:#000;transition:background-color 300ms ease, width 300ms ease;}
+                    &:hover{color:orange;
+                        &:after{background-color: orange;}
+                    }
+                }
+                &.footer-tel{
+                    a{
+                        &:after{width: 0;}
+                        &:hover{
+                            &:after{width: 100%;}
+                        }
+                    }
+                }
+                &.footer-mail{
+                    a{
+                        &:after{width: 100%;}
+                        &:hover{
+                            &:after{width: 0;}
+                        }
+                    }
+                }
+            }
+        }
+        .footer-right{float: left;font-weight: 400;font-size: 12px;color:#000000;
+            .footer-right-text{margin-right: 10px;vertical-align: middle;display: inline-block;margin-bottom: -2px;}
+            .footer-right-img{vertical-align: middle;display: inline-block;}
+        }
+    }
+
+/* /footer */
