@@ -1,6 +1,6 @@
 /* breadcrumbs */
 
-    .breadcrumbs{font-family: 'AvenirNext', sans-serif;font-weight: 500;
+    .breadcrumbs{font-family: 'AvenirNext', sans-serif;font-weight: 500;margin-bottom: 20px;
         li{display: inline-block;font-size: 14px;color:#575757;padding-right: 15px;margin-right:5px;position: relative;
             &:before{content: '';display: block;position: absolute;right:0;top:calc(50% - 5px);width: 6px;height: 10px;background-image:url(../images/arrow.png);background-repeat: no-repeat;}
             &:last-child{padding-right: 0;margin-right: 0;
