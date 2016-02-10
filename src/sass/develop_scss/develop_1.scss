@@ -46,3 +46,18 @@
     }
 
 /* /text-block */
+
+/* main-texter */
+
+    .main-texter{padding: 40px 0 40px 0;background-color: #faf8f6;
+        .title{margin-bottom: 35px;}
+        .text-block{font-weight: 400;line-height: 22px;}
+        .main-texter-main{display: inline-block;width: calc(100% - 250px);vertical-align: top;}
+        .main-texter-images{display: inline-block;width: 240px;vertical-align: top;
+            .main-texter-image-wrap{margin-bottom: 50px;text-align: right;
+                &:last-child{margin-bottom: 0;}
+            }
+        }
+    }
+
+/* /main-texter */

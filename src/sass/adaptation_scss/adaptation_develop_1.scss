@@ -21,6 +21,18 @@
 }
 @media screen and (max-width: 666px){
 
+    /* main-texter */
+
+        .main-texter{padding: 30px 0 30px 0;
+            .title{margin-bottom: 10px;}
+            .main-texter-main{width: 100%;margin-bottom: 20px;}
+            .main-texter-images{width: 100%;text-align: center;
+                .main-texter-image-wrap{display: inline-block;margin-bottom: 10px;padding: 0 10px;}
+            }
+        }
+
+    /* /main-texter */
+
 }
 @media screen and (max-width: 479px){
 
