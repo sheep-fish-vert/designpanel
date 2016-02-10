@@ -61,6 +61,21 @@
 
     /* /footer */
 
+    /* form */
+
+        .form{
+            .form-row-wrap{margin-bottom: 0;
+                &.form-col-2{
+                    .form_row{
+                        &:first-child, &:last-child{width: 100%;padding-left:0;padding-right: 0;}
+                    }
+                }
+                .form_row{margin-bottom: 15px;}
+            }
+        }
+
+    /* /form */
+
 }
 @media screen and (max-width: 479px){
 
