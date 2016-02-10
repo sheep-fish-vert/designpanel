@@ -2,7 +2,7 @@ function mainTab(){
     if($('.main-menu')){
         $('.main-menu .menu-tab li').click(function() {
             $('.main-menu .menu-tab li').removeClass('active');
-            $('.main-center li').removeClass('active').hide();
+            $('.main-center li').removeClass('active').slideUp(400);
             var elem = $(this).index();
             $(this).addClass('active');
             $('.main-center li').eq(elem).addClass('active').slideDown(400);
@@ -14,7 +14,7 @@ function mainTab(){
                 var elemTab = $('.main-menu .menu-tab li.active');
                 var elemCount = $('.main-menu .menu-tab li.active').index();
                 $('.main-menu .menu-tab li').removeClass('active');
-                $('.main-center li').removeClass('active').slideUp();
+                $('.main-center li').removeClass('active').slideUp(400);
                 if(elemCount>=$('.main-menu .menu-tab li').length-1){
                     elemCount = -1;
                 }

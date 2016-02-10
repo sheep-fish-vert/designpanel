@@ -14,10 +14,28 @@
 
 }
 @media screen and (max-width: 992px){
-
+    /*main-top*/
+    .main-top{background-size: cover;
+        .main-menu{padding-top: 10px;}
+        .menu-tab{max-width: 100%;float: none;width: 100%;padding-bottom: 25px;
+            li{display: inline-block;vertical-align: top;}
+        }
+        .main-center{float: none;margin:0 auto;
+            li{margin:0 auto;}
+        }
+        .main-cub{float: none;display: block;margin:0 auto;text-align: center;padding-top: 0px;display: none;
+            .cub-item{display: inline-block;margin:0 2%;}
+        }
+    }
+    /*/main-top*/
 }
 @media screen and (max-width: 767px){
-
+    /*main-top*/
+    .main-top{
+        .main-bottom{background-size: cover;}
+        .main-bottom-item{float: none;width: 32%;display: inline-block;}
+    }
+    /*/main-top*/
 }
 @media screen and (max-width: 666px){
 
