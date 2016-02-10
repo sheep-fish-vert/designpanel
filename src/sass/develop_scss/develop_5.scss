@@ -1,7 +1,7 @@
 /*header*/
     .header-align{ max-width: 1280px; margin: 0 auto; width:100%; position: relative;
         .bg{img{}}
-        .header-wrap{ position: absolute; max-width: 1051px; left:50%; transform:translateX(-50%); top:0;
+        .header-wrap{ position: absolute; left:50%; transform:translateX(-50%); top:0;
             .txt{ width:100%; text-align: center;
                 b{font:800 24px/24px 'Avenir-Next';}
                 p{font:400 12px/12px 'Avenir-Next'; color:#000;}
@@ -9,18 +9,16 @@
             .button{ position: absolute; display: block; width: 161px; height: 29px; background-color: #000; text-align: center;text-decoration: none; border-radius: 7px; right:0; top:26px;
                 span{font:500 16px/16px 'Avenir-Next'; color:#fff; }
             }
-        }
-    }
-/*END header*/
-/*nav*/
-    .nav-wrap{max-width: 1280px; margin: 0 auto; width:100%; position: relative;
-        .nav-align{ max-width: 1051px;
-            .logo{}
-            ul{
-                li{text-align: center;
-                    a{text-decoration: none; color: #fff; font:800 24px/24px 'Avenir-Next';}
+            .nav-wrap{ width:100%;
+                .nav-align{position: relative;
+                    .logo{position: absolute;top:0;}
+                    ul{
+                        li{text-align: center; display: inline-block;
+                            a{text-decoration: none; color: #fff; font:800 24px/24px 'Avenir-Next'; text-transform: uppercase;}
+                        }
+                    }
                 }
             }
         }
     }
-/*END nav*/
+/*END header*/
