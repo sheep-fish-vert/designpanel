@@ -15,6 +15,20 @@
 }
 @media screen and (max-width: 992px){
 
+    /* footer */
+
+        .footer{
+            .footer-left{
+                .footer-contacts{
+                    &.footer-mail{margin-right: 0;margin-bottom: 12px;}
+                    &.footer-adress{width: 100%}
+                }
+            }
+            .footer-right{padding-top: 20px;}
+        }
+
+    /* /footer */
+
 }
 @media screen and (max-width: 767px){
 
@@ -32,6 +46,20 @@
         }
 
     /* /main-texter */
+
+    /* footer */
+
+        .footer{
+            .footer-left{float: none;width: 100%;text-align: center;
+                .footer-contacts{
+                    &.footer-tel{width: 100%;margin-bottom: 10px;margin-right: 0;}
+                    &.footer-mail{width: 100%;}
+                }
+            }
+            .footer-right{padding-top: 15px;float: none;text-align: center;width: 100%;}
+        }
+
+    /* /footer */
 
 }
 @media screen and (max-width: 479px){
