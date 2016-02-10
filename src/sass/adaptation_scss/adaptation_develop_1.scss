@@ -24,6 +24,16 @@
 }
 @media screen and (max-width: 479px){
 
+    /* text-block */
+
+        .text-block{
+            p{
+                b, b:first-child, b:last-child{width: 100%;padding: 15px 0;text-align: center;}
+            }
+        }
+
+    /* /text-block */
+
 }
 @media screen and (max-width: 320px){
 
