@@ -4,7 +4,8 @@ var scrollBar = $.scrollbarWidth();
 
 function mainTab(){
     if($('.main-menu')){
-        $('.main-menu .menu-tab li').click(function() {
+        $('.main-menu .menu-tab li').click(function(event) {
+            event.preventDefault();
             $('.main-menu .menu-tab li').removeClass('active');
             $('.main-center li').removeClass('active').slideUp(400);
             var elem = $(this).index();
