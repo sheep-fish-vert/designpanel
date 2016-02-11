@@ -62,7 +62,8 @@ $(document).ready(function(){
     $('.fancybox').fancybox({
         fitToView:true,
         autoSize:true,
-        padding:0
+        padding:0,
+        wrapCSS:"fancybox-normal"
     });
 });
 

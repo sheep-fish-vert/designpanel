@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(document).on('click', '.butter', function(){
         $(this).toggleClass('active');
     });
-    $('.fancybox').fancybox();
+
     $('.colection-wrap').on('click', '.thumbs', function(event){
         event.isDefaultPrevented();
         $('.colection-wrap .thumbs').not(this).parent('.item').removeClass('active');

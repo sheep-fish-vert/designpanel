@@ -21,7 +21,9 @@
     .menu-tab:not(.menu-tab-main) {margin:0 auto;position: relative;
         a{text-align: center;}
         &>ul{position: absolute;width: 100%;z-index: 100;top: calc(100% + 5px);display: none;
-            li{margin-bottom: 0px;border-bottom: 1px solid white;}
+            li{margin-bottom: 0px;border-bottom: 1px solid white;
+                &:last-child{border-bottom: none;}
+            }
         }
         span{margin: 0 auto;text-align: center;display: block;}
 
