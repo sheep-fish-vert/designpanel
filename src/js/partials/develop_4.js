@@ -33,8 +33,16 @@ function mainTab(){
     }
 }
 
+function menuMobileAside(){
+    $('.menu-tab-mobile').click(function() {
+        $(this).toggleClass('active');
+        $('.menu-tab>ul').stop().slideToggle();
+    });
+}
+
 $(document).ready(function(){
     mainTab();
+    menuMobileAside();
 });
 
 $(window).load(function(){
