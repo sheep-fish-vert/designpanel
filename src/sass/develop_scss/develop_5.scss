@@ -5,7 +5,7 @@
                 b{font:800 24px/26px 'AvenirNext';}
                 p{font:400 12px/12px 'AvenirNext'; color:#000;}
             }
-            .button{ position: absolute; display: block; width: 161px; height: 29px; background-color: #000; text-align: center;text-decoration: none; border-radius: 7px; right:10px; top:26px; border:2px solid #000; transition: background-color 300ms;
+            .buttonA{ position: absolute; display: block; width: 161px; height: 29px; background-color: #000; text-align: center;text-decoration: none; border-radius: 7px; right:10px; top:26px; border:2px solid #000; transition: background-color 300ms;
                 span{font:500 16px/16px 'AvenirNext'; color:#fff; transition: color 300ms;}
                 &:hover{background-color: #fff;
                     span{color: #000;}
@@ -52,18 +52,55 @@
                 p{font:400 14px/14px 'AvenirNext'; color:#3b3b3b;}
             }
             .items-wrap{width:100%}
-            .item{display: block; margin-bottom: 20px; padding: 4px;  float: left; border:1px solid #000; border-bottom-width: 0;
-                .thumbs{max-width:170px; width: 100%; cursor:pointer;
-                    .img{height: 133px; overflow: hidden; position: relative; margin-bottom: 5px;
+            .item{display: block; margin-bottom: 20px;   float: left;  position: relative;
+                .thumbs{max-width:182px; width: 100%; cursor:pointer; background-color: #fff; border:1px solid #000;  position: relative; z-index: 20;     padding: 4px;
+                    .img{height: 133px; width:100%; overflow: hidden; position: relative; margin-bottom: 5px;
                         &:before{content: ''; display: block;position: absolute; width: 100%; height:100%; background-color: rgba(0,0,0,0.7); top:0; left:0; transform: scale(0,0); transition: transform 300ms;}
                         &:after{content: ''; width: 40px; height: 40px; display: block; background-image: url(../images/loop.png); position: absolute; left:calc(50% - 20px); top:calc(50% - 20px);}
                         &:hover{&:before{transform: scale(1,1);}}
                     }
-                    .txt{ height: 20px; width: 100%; background-color: #8e867b; text-align: center;
+                    .txt{ height: 20px; width: 100%; background-color: #8e867b; text-align: center; padding-top: 4px;
                         p{font:500 14px/14px 'AvenirNext'; color:#fff; text-transform: uppercase;}
                     }
                 }
-                .description{}
+                .description{ padding: 21px 6px; border:1px solid #000; display: none;
+                    .desc-title{font:500 18px/18px 'AvenirNext'; color:#fff; height: 30px; background-color: #8e867b; padding-left: 18px; padding-top: 6px; margin-bottom: 27px;     padding-right: 6px;
+                        .right{float:right; font-size: 14px;}
+                        p{display: inline-block;}
+                    }
+                    .module-1{
+                        .module-content{ padding-bottom: 30px;
+                            p{font:400 14px/17px 'AvenirNext'; color:#3b3b3b;}
+                            table{width: 100%; margin-top: 47px;
+                                td{ border:1px solid #000; width: 25%; padding: 8px 8px 24px;
+                                    p{font-style: italic; font-size: 12px; line-height: 14px; font-family:'AvenirNext' ;}
+                                    p:first-child{font:500 12px/15px 'AvenirNext';}
+                                }
+                            }
+                        }
+                    }
+                    .module-2{
+                        .items-wrap{
+                            .img{ max-width: 32%; float:left; margin-right: 2%; margin-bottom: 10px;
+                                &:nth-child(3n){margin-right: 0;}
+                            }
+                        }
+                    }
+                    .module-3{
+                        .items-wrap{
+                            .img{max-width: 32%; float:left; overflow: hidden; position: relative; margin-bottom: 10px; margin-right: 2%;
+                                &:before{content: ''; display: block;position: absolute; width: 100%; height:100%; background-color: rgba(0,0,0,0.7); top:0; left:0; transform: scale(0,0); transition: transform 300ms;}
+                                &:after{content: ''; width: 40px; height: 40px; display: block; background-image: url(../images/loop.png); position: absolute; left:calc(50% - 20px); top:calc(50% - 20px);}
+                                &:hover{&:before{transform: scale(1,1);}}
+                                &:nth-child(3n){margin-right: 0;}
+                            }
+                        }
+                    }
+                }
+                &.active{
+                    .thumbs{z-index: 50;}
+                    .description{display: block;}
+                }
             }
 
 

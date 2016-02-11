@@ -85,9 +85,24 @@
 
 /* /contacts map init */
 
+/* backcall-popup */
+
+    function backcallPopup(){
+
+        $('.fancybox').fancybox({
+            fitToView:true,
+            autoSize:true,
+            padding:0
+        });
+
+    };
+
+/* /backcall-popup */
+
 $(document).ready(function(){
 
     textBlockPopup();
+    backcallPopup();
 
     contactsMapInit('contacts-map');
 
