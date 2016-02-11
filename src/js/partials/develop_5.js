@@ -5,9 +5,10 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
     $('.fancybox').fancybox();
-    $('.colection-wrap').on('click', '.item', function(){
-        $('.colection-wrap .item').not(this).removeClass('active');
-        $(this).toggleClass('active');
+    $('.colection-wrap').on('click', '.thumbs', function(event){
+        event.isDefaultPrevented();
+        $('.colection-wrap .thumbs').not(this).parent('.item').removeClass('active');
+        $(this).parent('.item').toggleClass('active');
         docHeight();
          if($('.item.active').length == 0){$('.colection1').removeAttr('style');};
          if($('.item.active').length > 0){positionLeft($('.active'));}
