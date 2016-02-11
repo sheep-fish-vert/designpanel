@@ -26,7 +26,7 @@
         span{margin: 0 auto;text-align: center;display: block;}
 
         .menu-tab-mobile{display: block;
-            b{display: block;color: #fff;font-weight: 800;font-size: 18px;background-color: #292929;text-decoration: none;line-height: 21px;padding: 9px 5px;margin-bottom: 20px;position: relative;
+            b{display: block;color: #fff;font-weight: 800;font-size: 18px;background-color: #292929;text-decoration: none;line-height: 21px;padding: 9px 5px;position: relative;
                 &:after{content: '';position: absolute;height: 10px;width: 10px;border-right: 2px solid white;border-bottom: 2px solid white;transform: rotate(-45deg) translateY(-50%);right: 40px;top: 40%;transition:all ease-out .2s;}
             }
             &.active{
@@ -64,6 +64,12 @@
         .main-bottom-item{float: none;width: 32%;display: inline-block;vertical-align: top;}
     }
     /*/main-top*/
+
+    /*shpon-variants*/
+    .shpon-variants{
+        .item-shpon-row .item-shpon-row-wrap{text-align: center;}
+    }
+    /*/shpon-variants*/
 }
 @media screen and (max-width: 666px){
 
