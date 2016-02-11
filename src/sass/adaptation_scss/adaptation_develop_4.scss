@@ -33,7 +33,7 @@
     /*main-top*/
     .main-top{
         .main-bottom{background-size: cover;}
-        .main-bottom-item{float: none;width: 32%;display: inline-block;}
+        .main-bottom-item{float: none;width: 32%;display: inline-block;vertical-align: top;}
     }
     /*/main-top*/
 }
@@ -41,8 +41,21 @@
 
 }
 @media screen and (max-width: 479px){
-
+    /*main-top*/
+    .main-top{
+        .main-menu{padding-bottom: 20px;}
+        .main-bottom{background:black;}
+        .main-bottom-item{width: 100%;}
+    }
+    /*/main-top*/
 }
 @media screen and (max-width: 320px){
-
+    /*main-top*/
+    .main-top{
+        .menu-tab a{font-size: 15px;line-height: 18px;
+            span{max-width: 133px;}
+        }
+        .main-bottom .main-bottom-title{font-size: 21px;}
+    }
+    /*/main-top*/
 }
