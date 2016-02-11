@@ -63,7 +63,7 @@
                         p{font:500 14px/14px 'AvenirNext'; color:#fff; text-transform: uppercase;}
                     }
                 }
-                .description{ padding: 21px 6px; border:1px solid #000; display: none;
+                .description{ padding: 21px 6px; border:1px solid #000; display: none;     position: absolute;    top: 167px;
                     .desc-title{font:500 18px/18px 'AvenirNext'; color:#fff; height: 30px; background-color: #8e867b; padding-left: 18px; padding-top: 6px; margin-bottom: 27px;     padding-right: 6px;
                         .right{float:right; font-size: 14px;}
                         p{display: inline-block;}
@@ -98,7 +98,7 @@
                     }
                 }
                 &.active{
-                    .thumbs{z-index: 50;}
+                    .thumbs{z-index: 50; border-bottom-color: #fff;}
                     .description{display: block;}
                 }
             }
