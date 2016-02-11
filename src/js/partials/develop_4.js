@@ -40,11 +40,24 @@ function menuMobileAside(){
     });
 }
 
+function variantsShponSlider(){
+
+    $('.shpon-variants-slider-wrap').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+        dots:true
+    });
+
+}
+
 
 
 $(document).ready(function(){
     mainTab();
     menuMobileAside();
+    variantsShponSlider();
 
     $('.fancybox').fancybox({
         fitToView:true,
