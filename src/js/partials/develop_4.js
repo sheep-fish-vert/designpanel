@@ -33,8 +33,16 @@ function mainTab(){
     }
 }
 
+function menuMobileAside(){
+    $('.menu-tab-mobile').click(function() {
+        $(this).toggleClass('active');
+        $('.menu-tab>ul').stop().slideToggle();
+    });
+}
+
 $(document).ready(function(){
     mainTab();
+    menuMobileAside();
 });
 
 $(window).load(function(){
@@ -42,5 +50,9 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-
+    if($(window).width()>992){
+        $('.menu-tab ul').show();
+    }else{
+        $('.menu-tab ul').hide();
+    }
 });
