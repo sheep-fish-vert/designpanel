@@ -100,10 +100,44 @@
 
 /* /backcall-popup */
 
+/* gallery-works slider */
+
+    function galleryWorksSlider(){
+
+        $('.gallery-works-main').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows:false,
+            dots:true,
+            responsive: [
+                {
+                  breakpoint: 666,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 375,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                },
+            ]
+        });
+
+    }
+
+/* /gallery-works slider */
+
+
 $(document).ready(function(){
 
     textBlockPopup();
     backcallPopup();
+    galleryWorksSlider();
 
     contactsMapInit('contacts-map');
 
