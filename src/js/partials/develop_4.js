@@ -1,3 +1,7 @@
+$.scrollbarWidth=function(){var a,b,c;if(c===undefined){a=$('<div style="width:50px;height:50px;overflow:auto"><div/></div>').appendTo('body');b=a.children();c=b.innerWidth()-b.height(99).innerWidth();a.remove()}return c};
+
+var scrollBar = $.scrollbarWidth();
+
 function mainTab(){
     if($('.main-menu')){
         $('.main-menu .menu-tab li').click(function() {
@@ -72,7 +76,7 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-    if($(window).width()>992){
+    if($(window).width()+scrollBar>992){
         $('.menu-tab:not(.menu-tab-main) ul').show();
     }else{
         $('.menu-tab:not(.menu-tab-main) ul').hide();
