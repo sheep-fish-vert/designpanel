@@ -40,9 +40,17 @@ function menuMobileAside(){
     });
 }
 
+
+
 $(document).ready(function(){
     mainTab();
     menuMobileAside();
+
+    $('.fancybox').fancybox({
+        fitToView:true,
+        autoSize:true,
+        padding:0
+    });
 });
 
 $(window).load(function(){
@@ -51,8 +59,8 @@ $(window).load(function(){
 
 $(window).resize(function(){
     if($(window).width()>992){
-        $('.menu-tab ul').show();
+        $('.menu-tab:not(.menu-tab-main) ul').show();
     }else{
-        $('.menu-tab ul').hide();
+        $('.menu-tab:not(.menu-tab-main) ul').hide();
     }
 });
