@@ -32,9 +32,9 @@
                     }
                 }
                 ul{position: relative; z-index: 1;
-                    li{text-align: center; display: inline-block; padding: 5px 21px 0; height: 30px;
-                        a{text-decoration: none; color: #fff; font:800 14px/14px 'AvenirNext'; text-transform: uppercase;}
-                        &:last-child{padding-right: 0;}
+                    li{text-align: center; display: inline-block; padding: 5px 0 0; height: 30px;
+                        a{text-decoration: none; color: #fff; font:800 14px/14px 'AvenirNext'; text-transform: uppercase; padding: 0 21px;}
+
                         &:hover{background-color: #000;
                         }
                     }
@@ -45,15 +45,16 @@
     }
 /*END header*/
 /*colection-1*/
-    .colection1{
-        .colection-wrap{
+    .colection1{width: 100%;
+        .colection-wrap{max-width: 725px; width: 100%; margin: 0 auto;
             .big-preview{
                 h2{font:400 48px/48px 'ArialNarrow'; color:#c0c0c0;}
                 p{font:400 14px/14px 'AvenirNext'; color:#3b3b3b;}
             }
-            .items-wrap{width:100%}
-            .item{display: block; margin-bottom: 20px;   float: left;  position: relative;
-                .thumbs{max-width:182px; width: 100%; cursor:pointer; background-color: #fff; border:1px solid #000;  position: relative; z-index: 20;     padding: 4px;
+            .colection-info{width: 100%; text-align: center; font:400 14px/14px 'AvenirNext'; color:#000; padding:50px 0 15px;}
+            .itemZ-wrap{width:100%; position: relative;}
+            .item{display: block; margin-bottom: 20px;   float: left;  position: relative; z-index: 10;
+                .thumbs{max-width:182px; width: 100%; cursor:pointer; background-color: #fff; border:1px solid #fff;  position: relative; z-index: 20;     padding: 4px;
                     .img{height: 133px; width:100%; overflow: hidden; position: relative; margin-bottom: 5px;
                         &:before{content: ''; display: block;position: absolute; width: 100%; height:100%; background-color: rgba(0,0,0,0.7); top:0; left:0; transform: scale(0,0); transition: transform 300ms;}
                         &:after{content: ''; width: 40px; height: 40px; display: block; background-image: url(../images/loop.png); position: absolute; left:calc(50% - 20px); top:calc(50% - 20px);}
@@ -63,8 +64,8 @@
                         p{font:500 14px/14px 'AvenirNext'; color:#fff; text-transform: uppercase;}
                     }
                 }
-                .description{ padding: 21px 6px; border:1px solid #000; display: none;     position: absolute;    top: 167px;
-                    .desc-title{font:500 18px/18px 'AvenirNext'; color:#fff; height: 30px; background-color: #8e867b; padding-left: 18px; padding-top: 6px; margin-bottom: 27px;     padding-right: 6px;
+                .description{ padding: 21px 6px; border:1px solid #000; display: none;     position: absolute;    top: 167px; width: 720px; background-color: #fff;
+                    .desc-title{font:500 18px/18px 'AvenirNext'; color:#fff; background-color: #8e867b; margin-bottom: 27px;     padding: 6px 6px 6px 18px;
                         .right{float:right; font-size: 14px;}
                         p{display: inline-block;}
                     }
@@ -97,8 +98,8 @@
                         }
                     }
                 }
-                &.active{
-                    .thumbs{z-index: 50; border-bottom-color: #fff;}
+                &.active{ z-index: 50;
+                    .thumbs{z-index: 50;border-color: #000; border-bottom-color: #fff;}
                     .description{display: block;}
                 }
             }

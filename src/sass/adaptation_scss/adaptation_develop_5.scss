@@ -38,3 +38,41 @@
     }
 
 /*END header*/
+/*colection1*/
+    @media screen and (max-width: 740px){
+        .colection1{
+            .colection-wrap{max-width: 541px;
+                .item{
+                    .description{width: 540px;}
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 560px){
+        .colection1{
+            .colection-wrap{max-width:361px;
+                .item{
+                    .description{width: 360px;
+                        .desc-title{text-align: center;}
+                        .module-1{
+                            .module-content{
+                                table{
+                                    td{display: inline-block; width: 100%; }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 400px){
+        .colection1{
+            .colection-wrap{
+                .itemZ-wrap{max-width: 180px;    margin: 0 auto; position:static;}
+                 .item .description{border-left: none; border-right: none;}
+            }
+        }
+    }
+
+/*END colection1*/
