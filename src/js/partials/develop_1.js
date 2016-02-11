@@ -89,7 +89,7 @@
 
     function backcallPopup(){
 
-        $('.fancybox').fancybox({
+        $('.fancybox-backcall').fancybox({
             fitToView:true,
             autoSize:true,
             padding:0,
