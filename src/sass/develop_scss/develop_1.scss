@@ -254,3 +254,16 @@
     }
 
 /* /contact-popup */
+
+/* gallery-works */
+
+    .gallery-works-wrap{margin-left: -10px;
+       .gallery-works-main-item{padding: 0 10px;
+            .gallery-works-main-img{margin-bottom: 20px;height: 300px;overflow: hidden;position: relative;
+                img{max-width: none;position: absolute;left:50%;top: 50%;transform:translate(-50%, -50%);}
+                &:last-child{margin-bottom: 0;}
+            }
+       }
+    }
+
+/* gallery-works */
