@@ -50,5 +50,9 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-
+    if($(window).width()>992){
+        $('.menu-tab ul').show();
+    }else{
+        $('.menu-tab ul').hide();
+    }
 });
