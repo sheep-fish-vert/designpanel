@@ -29,6 +29,12 @@
 
     /* /footer */
 
+    /* gallery-works */
+
+
+
+    /* /gallery-works */
+
 }
 @media screen and (max-width: 767px){
 
@@ -89,7 +95,19 @@
 
     /* /text-block */
 
+    /* call-popup */
+
+        .backcall-popup-fancybox{max-width: none;min-width:320px;width: calc(100% - 30px)!important;left: 50%!important;transform:translate(-50%, 0);}
+
+    /* /call-popup */
+
 }
 @media screen and (max-width: 320px){
+
+    /* call-popup */
+
+        .backcall-popup-fancybox{left: 0!important;transform:translate(0, 0);}
+
+    /* /call-popup */
 
 }

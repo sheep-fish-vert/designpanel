@@ -33,8 +33,24 @@ function mainTab(){
     }
 }
 
+function menuMobileAside(){
+    $('.menu-tab-mobile').click(function() {
+        $(this).toggleClass('active');
+        $('.menu-tab>ul').stop().slideToggle();
+    });
+}
+
+
+
 $(document).ready(function(){
     mainTab();
+    menuMobileAside();
+
+    $('.fancybox').fancybox({
+        fitToView:true,
+        autoSize:true,
+        padding:0
+    });
 });
 
 $(window).load(function(){
@@ -42,5 +58,9 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-
+    if($(window).width()>992){
+        $('.menu-tab:not(.menu-tab-main) ul').show();
+    }else{
+        $('.menu-tab:not(.menu-tab-main) ul').hide();
+    }
 });

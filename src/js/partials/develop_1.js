@@ -89,20 +89,48 @@
 
     function backcallPopup(){
 
-        $('.fancybox').fancybox({
+        $('.fancybox-backcall').fancybox({
             fitToView:true,
             autoSize:true,
-            padding:0
+            padding:0,
+            wrapCSS:'backcall-popup-fancybox'
         });
 
     };
 
 /* /backcall-popup */
 
+/* gallery-works slider */
+
+    function galleryWorksSlider(){
+
+        $('.gallery-works-main').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows:false,
+            dots:true,
+            responsive: [
+                {
+                  breakpoint: 666,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                  }
+                }
+            ]
+        });
+
+    }
+
+/* /gallery-works slider */
+
+
 $(document).ready(function(){
 
     textBlockPopup();
     backcallPopup();
+    galleryWorksSlider();
 
     contactsMapInit('contacts-map');
 
