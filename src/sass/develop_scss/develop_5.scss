@@ -13,7 +13,7 @@
             }
         }
         nav{z-index:5; position: relative;}
-        .nav-wrap{ width:100%; background-color: rgba(0,0,0,0.8); height: 30px;
+        .nav-wrap{ width:100%; background-color: rgba(0,0,0,0.8); height: 30px;border-bottom: 1px solid white;
             .nav-align{position: relative;width: 100%; text-align: right;
                 .logo{position: absolute; border-radius: 50%; border:2px solid #fff;     top: -53px; z-index: 10;
                     a{display: block;overflow: hidden;border-radius: 40%;}
