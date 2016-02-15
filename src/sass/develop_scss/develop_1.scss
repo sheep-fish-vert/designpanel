@@ -258,20 +258,19 @@
 /* gallery-works */
 
     .gallery-works-wrap{margin-left: -10px;margin-right:-10px;margin-bottom: 75px;
-       .gallery-works-main-item{padding: 0 10px;
-            .gallery-works-main-img{margin-bottom: 20px;height: 300px;overflow: hidden;position: relative;
-               a{
-                    &:before, &:after{content: '';display: block;position: absolute;transform:scale(0) translateZ(0);transition:transform 300ms ease;}
-                    &:before{z-index: 1;top: 0;left: 0;right: 0;bottom: 0;background-color:rgba(0, 0, 0, .7);}
-                    &:after{top:calc(50% - 20px);left:calc(50% - 20px);background-image:url(../images/loop.png);width: 40px;height: 40px;z-index: 2;}
-                }
-                img{max-width: none;position: absolute;left:50%;top: 50%;transform:translate(-50%, -50%);}
-                &:last-child{margin-bottom: 0;}
-                &:hover{
-                    a{&:before, &:after{transform:scale(1) translateZ(0);}}
-                }
+        &:after{content:'';display: block;clear: both;}
+        .gallery-works-main-img{height: 300px;overflow: hidden;position: relative;width: calc(33.33% - 23px);display:inline-block;margin:0 10px 20px 10px;vertical-align: top;
+           a{
+                &:before, &:after{content: '';display: block;position: absolute;transform:scale(0) translateZ(0);transition:transform 300ms ease;}
+                &:before{z-index: 1;top: 0;left: 0;right: 0;bottom: 0;background-color:rgba(0, 0, 0, .7);}
+                &:after{top:calc(50% - 20px);left:calc(50% - 20px);background-image:url(../images/loop.png);width: 40px;height: 40px;z-index: 2;}
             }
-       }
+            img{max-width: none;position: absolute;left:50%;top: 50%;transform:translate(-50%, -50%);}
+            &:last-child{margin-bottom: 0;}
+            &:hover{
+                a{&:before, &:after{transform:scale(1) translateZ(0);}}
+            }
+        }
     }
     .slick-dots li{width: 15px;height: 15px;
          button{padding: 0;width: 15px;height: 15px;border-radius: 50%;border:1px solid #434343;background-color:#fff;transition:background-color 300ms ease;

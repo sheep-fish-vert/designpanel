@@ -137,7 +137,7 @@ $(document).ready(function(){
 
     textBlockPopup();
     backcallPopup();
-    galleryWorksSlider();
+    //galleryWorksSlider();
 
     contactsMapInit('contacts-map');
 
