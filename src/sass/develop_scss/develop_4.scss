@@ -33,12 +33,16 @@
     .main-cub{float: right;padding-top: 100px;
         a{display: block;text-decoration: none;}
         .cub-item{height: 170px;width: 170px;margin-bottom: 30px;position: relative;overflow: hidden;transition:all ease-out .2s;
-            &:hover{box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.73);}
+            &:hover{box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.73);
+                .cub-item-text{color: black;background-color: rgba(255, 255, 255, 1);}
+            }
         }
         .cub-item-img{position: absolute;transform: translate(-50%, -50%);top: 50%;left: 50%;
             img{max-width: none;}
         }
-        .cub-item-text{position: absolute;bottom: 0;left: 0;right: 0;font-size: 14px;color: white;background-color: rgb(0, 0, 0);padding: 3px;text-align: center;}
+        .cub-item-text{position: absolute;bottom: 0;left: 0;right: 0;font-size: 14px;color: white;background-color: rgb(0, 0, 0);padding: 3px;text-align: center;min-height: 63px;display: table;transition:all ease-out .2s;
+            p{display: table-cell;vertical-align: middle;}
+        }
     }
 }
 /*.main-top*/
@@ -67,8 +71,11 @@
 }
 .items-shpon{padding-bottom: 100px;
     .items-shpon-row{padding-bottom: 24px;
-        a{color: #646363;font-size: 14px;text-decoration: underline;font-weight: 500;
-            &:hover{text-decoration: none;}
+        a{color: #646363;font-size: 14px;text-decoration: underline;font-weight: 500;position: relative;
+            &:after{background: url('../images/Zoom_tool.png') center center no-repeat;content: '';position: absolute;top: 0;right: 0;height: 16px;width: 16px;opacity: 0;}
+            &:hover{text-decoration: none;
+                &:after{opacity: 1;}
+            }
         }
     }
     .items-shpon-title{background-color: #8e867b;min-width: 350px;font-size: 14px;color: white;text-transform: uppercase;padding:0 10px;display: inline-block;font-weight: 500;}
