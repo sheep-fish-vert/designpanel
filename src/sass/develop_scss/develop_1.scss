@@ -310,3 +310,19 @@
     }
 
 /* /gallery-works */
+
+/* design text */
+
+    .design-text{position: relative;padding-right: 130px;
+        .design-text-wrap{margin-right: -130px;}
+        .designer-download-pdf{position:absolute;right: 0;top: 30px;text-align: center;
+            a{text-decoration: none;font-size: 12px;font-weight: 500;color:#000;transition:color 300ms ease;
+                &:hover{color:orange;}
+            }
+            span{display: block;}
+            img{max-width: 40px;}
+            .designer-download-pdf-img{margin-bottom:5px;}
+        }
+    }
+
+/* /design text */
