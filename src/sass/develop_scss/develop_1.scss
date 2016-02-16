@@ -38,8 +38,9 @@
 
     .text-block{font-weight: 500;font-size: 14px;color:#070707;line-height: 26px;
         h6{font-weight: 800;font-size: 24px;margin-bottom: 15px;line-height: 30px;}
-        p{
-            b{display: inline-block;width:calc(33.33% - 3px);padding: 15px 5px;text-align: center;
+
+        .gallery{
+            .gallery-item{display: inline-block;padding: 15px 5px;text-align: center;
                 &:first-child{padding: 15px 10px 15px 0;text-align:left;}
                 &:last-child{padding: 15px 0 15px 10px;text-align: right;}
                 a{display: inline-block;position: relative;text-decoration: none;
@@ -52,6 +53,7 @@
                 }
             }
         }
+
     }
 
 /* /text-block */
