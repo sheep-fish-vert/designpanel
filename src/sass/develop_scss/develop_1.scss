@@ -278,6 +278,7 @@
                 &:hover{color:#000;}
             }
             &.prev-page, &.next-page{
+                &.disable{display:none;}
                 a{position: relative;display: inline-block;
                     &:before, &:after{content: '';display: block;position: absolute;width: 10px;height: 2px;background-color: orange;transform-origin:50% 0;transition:background-color 300ms ease;}
                     &:before{top:calc(50% - 3px);}
