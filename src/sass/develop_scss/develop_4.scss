@@ -71,8 +71,8 @@
 }
 .items-shpon{padding-bottom: 100px;
     .items-shpon-row{padding-bottom: 24px;
-        a{color: #646363;font-size: 14px;text-decoration: underline;font-weight: 500;position: relative;
-            &:after{background: url('../images/Zoom_tool.png') center center no-repeat;content: '';position: absolute;top: 0;right: 0;height: 16px;width: 16px;opacity: 0;}
+        &>a{color: #646363;font-size: 14px;text-decoration: underline;font-weight: 500;position: relative;padding-right: 20px;
+            &:after{background: url('../images/zoom_tool.png') center center no-repeat;content: '';position: absolute;top: 0;right: 0px;height: 16px;width: 16px;opacity: 0;}
             &:hover{text-decoration: none;
                 &:after{opacity: 1;}
             }
