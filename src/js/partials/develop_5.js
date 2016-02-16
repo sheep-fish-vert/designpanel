@@ -6,6 +6,10 @@ $(document).ready(function(){
     });
 
     tabs();
+    $(document).on('click', '.closet', function(){
+        $(this).parents('.item').find('.thumbs').click();
+    });
+
 
 });
 
