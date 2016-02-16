@@ -272,13 +272,40 @@
             }
         }
     }
-    .slick-dots li{width: 15px;height: 15px;
-         button{padding: 0;width: 15px;height: 15px;border-radius: 50%;border:1px solid #434343;background-color:#fff;transition:background-color 300ms ease;
-             &:before{display: none;}
-         }
-         &.slick-active, &:hover{
-             button{background-color: #434343;}
-         }
+    .paginator{text-align: center;
+        .paginator-item{display: inline-block;vertical-align: middle;
+            a{color:orange;text-decoration: none;font-size: 14px;font-weight: 600;transition:color 300ms ease;
+                &:hover{color:#000;}
+            }
+            &.prev-page, &.next-page{
+                a{position: relative;display: inline-block;
+                    &:before, &:after{content: '';display: block;position: absolute;width: 10px;height: 2px;background-color: orange;transform-origin:50% 0;transition:background-color 300ms ease;}
+                    &:before{top:calc(50% - 3px);}
+                    &:after{top:calc(50% + 3px);}
+                    &:hover{
+                        &:before, &:after{background-color: #000;}
+                    }
+                }
+            }
+            &.prev-page{margin-right: 5px;
+                a{padding-left: 15px;
+                    &:before, &:after{left: 0;}
+                    &:before{transform:rotate(-45deg);top:calc(50% - 4px);}
+                    &:after{transform:rotate(45deg);top:calc(50% + 2px);left:1px;}
+                }
+            }
+            &.next-page{margin-left: 5px;
+                a{padding-right: 15px;
+                    &:before, &:after{right:0;}
+                    &:before{transform:rotate(45deg);}
+                    &:after{transform:rotate(-45deg);right:1px;}
+                }
+            }
+        }
+        .paginator-wrap{
+            li{display: inline-block;margin: 0 2px;color:#000;font-weight: 700;}
+            a{font-weight: 700;}
+        }
     }
 
-/* gallery-works */
+/* /gallery-works */
