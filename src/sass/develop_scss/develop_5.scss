@@ -71,6 +71,9 @@
                     }
                 }
                 .description{ padding: 21px 6px; border:1px solid #000; display: none;     position: absolute;    top: 167px; width: 720px; background-color: #fff;
+
+                    .closet{content:''; display: block; position: absolute; right:2px; top:2px; width:18px; height: 18px; background-color: #fff; cursor:pointer;background-image: url(../images/gtk-close.png); background-position: center; background-size: cover;}
+
                     .desc-title{font:500 18px/18px 'AvenirNext'; color:#fff; background-color: #8e867b; margin-bottom: 27px;     padding: 6px 6px 6px 18px;
                         .right{float:right; font-size: 14px;}
                         p{display: inline-block;}
@@ -88,7 +91,8 @@
                     }
                     .module-2{
                         .items-wrap{
-                            .img{ max-width: 32%; float:left; margin-right: 2%; margin-bottom: 10px;
+                            .img{ max-width: 32%; float:left; margin-right: 2%; margin-bottom: 10px; font:500 12px/15px 'AvenirNext'; color:#fff; text-decoration: none; position: relative;
+                                p{position: absolute; width: 100%; background-color: rgba(0,0,0,0.6); padding: 5px; bottom: 0;}
                                 &:nth-child(3n){margin-right: 0;}
                             }
                         }

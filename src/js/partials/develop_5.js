@@ -1,20 +1,15 @@
-
 $(document).ready(function(){
-
     $(document).on('click', '.butter', function(){
         $(this).toggleClass('active');
     });
-
     tabs();
-
+    $(document).on('click', '.closet', function(){
+        $(this).parents('.item').find('.thumbs').click();
+    });
 });
-
 $(window).load(function(){
-
 });
-
 $(window).resize(function(){
-
 });
 function tabs(){
     $('.colection-wrap').on('click', '.thumbs', function(event){
@@ -34,19 +29,15 @@ function tabs(){
        var left = object.position().left;
        left= 0 - left;
         object.find('.description').css('left',left);
-
-
     }
     function docHeight(){
         $('.colection1').removeAttr('style');
-        if($('.colection-wrap .active')){
+        if($('.colection-wrap .active').length>0){
             var abs = 0;
-            var con = 0;
-            var colH = $('.colection1').height();
             $('.colection-wrap .item .description').each(function() {
                 if($(this).height()>abs){abs=$(this).height();}
             });
-            $('.colection1').height((abs +colH));
+            $('.colection1').height((abs + $('.colection-wrap .active').offset().top));
         }
     }
 }
