@@ -3,7 +3,7 @@
 
     function textBlockPopup(){
 
-        $('.text-block p b a').fancybox({
+        $('.gallery a').fancybox({
             fitToView:true,
             autoSize:true,
             padding:0
