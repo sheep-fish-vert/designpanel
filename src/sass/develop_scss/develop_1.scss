@@ -54,6 +54,14 @@
             }
         }
 
+        &.shpon-variants-text{
+            .gallery{
+                .gallery-item{
+                    &:first-child, &:last-child{text-align: center;padding: 15px 5px;}
+                }
+            }
+        }
+
     }
 
 /* /text-block */
@@ -328,3 +336,9 @@
     }
 
 /* /design text */
+
+/* variants-shpon */
+
+
+
+/* /variants-shpon */

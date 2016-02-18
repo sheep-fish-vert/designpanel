@@ -62,7 +62,7 @@ function variantsShponSlider(){
 $(document).ready(function(){
     mainTab();
     menuMobileAside();
-    variantsShponSlider();
+    //variantsShponSlider();
 
     $('.fancybox').fancybox({
         fitToView:true,
