@@ -3,9 +3,12 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
     tabs();
+
     $(document).on('click', '.closet', function(){
         $(this).parents('.item').find('.thumbs').click();
     });
+     $(location.hash).find('.thumbs').click();
+
 });
 $(window).load(function(){
 });
@@ -41,3 +44,4 @@ function tabs(){
         }
     }
 }
+
