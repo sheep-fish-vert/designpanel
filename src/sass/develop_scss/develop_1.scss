@@ -71,7 +71,7 @@
     .main-texter{padding: 40px 0 40px 0;background-color: #faf8f6;
         .title{margin-bottom: 35px;}
         .text-block{font-weight: 400;line-height: 22px;}
-        .main-texter-main{display: inline-block;width: calc(100% - 250px);vertical-align: top;}
+        .main-texter-main{display: inline-block;width:100%;vertical-align: top;}
         .main-texter-images{display: inline-block;width: 240px;vertical-align: top;
             .main-texter-image-wrap{margin-bottom: 50px;text-align: right;
                 &:last-child{margin-bottom: 0;}
@@ -282,11 +282,13 @@
             }
         }
     }
-    .paginator{text-align: center;
+    .paginator,.wp-pagenavi{text-align: center;
+        a{color:orange;text-decoration: none;font-size: 14px;font-weight: 600;transition:color 300ms ease;
+            &:hover{color:#000;}
+        }
+        span{display: inline-block;margin: 0 2px;color:#000;font-weight: 700;}
         .paginator-item{display: inline-block;vertical-align: middle;
-            a{color:orange;text-decoration: none;font-size: 14px;font-weight: 600;transition:color 300ms ease;
-                &:hover{color:#000;}
-            }
+
             &.prev-page, &.next-page{
                 &.disable{display:none;}
                 a{position: relative;display: inline-block;

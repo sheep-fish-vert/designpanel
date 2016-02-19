@@ -60,7 +60,7 @@ function variantsShponSlider(){
 
 
 $(document).ready(function(){
-    mainTab();
+    //mainTab();
     menuMobileAside();
     //variantsShponSlider();
 
