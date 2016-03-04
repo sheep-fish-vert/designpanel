@@ -1,10 +1,10 @@
 /*menu*/
 .menu-tab{width: 100%;max-width: 300px;text-align: center;min-width: 150px;
     .menu-tab-mobile{display: none;}
-    li{margin-bottom: 20px;
+    li{margin-bottom: 20px;text-transform: uppercase;
         &:last-child{margin-bottom: 0;}
         &:hover{
-            a{background-color: rgba(41, 41, 41, .85);}
+            a{background-color: rgba(41, 41, 41, .85);text-transform: uppercase;}
             span{text-shadow: 0px 0px 8px black;}
         }
     }
@@ -19,7 +19,7 @@
     .aside{padding-right: 0;width: 28.6%;}
 
     .menu-tab{max-width: 300px;min-width: 150px;float: left;padding-bottom: 50px;
-        li{margin-bottom: 20px;
+        li{margin-bottom: 20px;text-transform: uppercase;
             &:hover,&.active{
                 a{background-color: rgba(255, 255, 255, .75);color: black;}
                 span{text-shadow: none;}
@@ -105,7 +105,7 @@
 
 /*main-center-wrap*/
 .main-center{padding-top: 40px;max-width: 550px;}
-.main-center-wrap{background-color: #fff;padding: 20px;overflow: hidden;
+.main-center-wrap{/*background-color: #fff;padding: 20px;*/overflow: hidden;
     .main-center-img{padding-bottom: 28px;text-align: center;
         img{display: inline-block;}
     }
