@@ -14,7 +14,7 @@
 /*/menu*/
 
 /*main-top*/
-.main-top{background: url('../images/main-top-bg.jpg') center -100px no-repeat;
+.main-top{background: url('../images/main-top-bg.jpg') center -100px no-repeat;background-size: cover;
     .main-menu{padding-top: 40px;}
     .aside{padding-right: 0;width: 28.6%;}
 
@@ -27,9 +27,9 @@
         }
         a{background-color: rgba(0, 0, 0, .83);transition:all ease-out .2s;}
     }
-    .main-center{float: left;
-        li{max-width: 490px;max-height: 600px;display: none;
-            //&.active{display: block;}
+    .main-center{float: left;min-height: 770px;
+        li{max-width: 550px;max-height: 675px;display: none;
+            &.active{display: block;}
         }
     }
     .main-cub{float: right;padding-top: 100px;
@@ -50,9 +50,9 @@
 /*.main-top*/
 
 /*main-bottom*/
-.main-bottom{color: white;position: relative;text-align: center;position: relative;
-    &:after{position: absolute;width: 100%;height: 100%;left: 0;top: 0;filter: blur(5px);content: '';background-image: url('../images/main-top-bg.jpg');background-repeat: no-repeat;background-position: center center;z-index: 1;}
-    &:before{position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(0,0,0, 0.75);content: '';z-index: 2;}
+.main-bottom{color: white;position: relative;text-align: center;position: relative;padding-bottom: 40px;padding-top: 15px;
+    &:after{position: absolute;width: 100%;height: 100%;left: 0;top: 0;filter: blur(5px);content: '';background-image: url('../images/main-top-bg.jpg');background-repeat: no-repeat;background-position: center center;z-index: 1;background-size: cover;}
+    &:before{position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(0,0,0, 0.65);content: '';z-index: 2;}
     &>.mbox{z-index: 15;}
     .main-bottom-title{font-weight: 800;font-size: 24px;padding-top: 25px;padding-bottom: 20px;}
     .main-bottom-item{float: left;width: 20%;padding-bottom: 20px;padding-top: 15px;}
@@ -104,8 +104,9 @@
 /*/call-popup-success*/
 
 /*main-center-wrap*/
-.main-center{padding-top: 40px;max-width: 550px;}
+.main-center{padding-top: 40px;}
 .main-center-wrap{/*background-color: #fff;padding: 20px;*/overflow: hidden;
+    ul li{}
     .main-center-img{padding-bottom: 28px;text-align: center;
         img{display: inline-block;}
     }
