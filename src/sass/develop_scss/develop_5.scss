@@ -49,6 +49,7 @@
 /*colection-1*/
     .colection1{width: 100%;
         .colection-wrap{max-width: 725px; width: 100%; margin: 0 auto;
+            &>*{-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;}
             .big-preview{
                 h2{font:400 48px/48px 'ArialNarrow'; color:#c0c0c0;}
                 p{font:400 14px/14px 'AvenirNext'; color:#3b3b3b; }

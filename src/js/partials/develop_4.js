@@ -65,7 +65,24 @@ function textBlockS(){
     $('.text-block a[href$=".jpg"], .text-block p a[href$=".gif"]').fancybox();
 }
 
+function disableSelection(){
+    jQuery.fn.extend({
+        disableSelection : function() {
+            this.each(function() {
+                this.onselectstart = function() { return false; };
+                this.unselectable = "on";
+                // Для Opera
+                jQuery(this).bind('mousedown', function() {
+                    return false;
+                });
+            });
+        }
+    });
+
+    $('.text-block *,.colection-wrap *').disableSelection();
+}
 $(document).ready(function(){
+    disableSelection();
     textBlockS();
     mainTab();
     menuMobileAside();
