@@ -61,9 +61,12 @@ function variantsShponSlider(){
 
 }
 
-
+function textBlockS(){
+    $('.text-block a[href$=".jpg"], .text-block p a[href$=".gif"]').fancybox();
+}
 
 $(document).ready(function(){
+    textBlockS();
     mainTab();
     menuMobileAside();
     //variantsShponSlider();

@@ -19,6 +19,7 @@ function tabs(){
         event.isDefaultPrevented();
         $('.colection-wrap .thumbs').not(this).parent('.item').removeClass('active');
         $(this).parent('.item').toggleClass('active');
+
         docHeight();
          if($('.item.active').length == 0){$('.colection1').removeAttr('style');};
          if($('.item.active').length > 0){positionLeft($('.active'));}
@@ -36,11 +37,15 @@ function tabs(){
     function docHeight(){
         $('.colection1').removeAttr('style');
         if($('.colection-wrap .active').length>0){
-            var abs = 0;
-            $('.colection-wrap .item .description').each(function() {
-                if($(this).height()>abs){abs=$(this).height();}
-            });
-            $('.colection1').height((abs + $('.colection-wrap .active').offset().top));
+
+            var itemHeight = $('.colection-wrap .active').find('.description').height();
+           var containerHeight = $('.itemZ-wrap').height();
+           var abs = itemHeight - containerHeight;
+           var thumbsHeight = $('.colection-wrap .active').height();
+            console.log($(this).parent('.item').height());
+
+
+            $('.itemZ-wrap').height( (containerHeight+thumbsHeight+abs + $('.colection-wrap .active').position().top) );
         }
     }
 }

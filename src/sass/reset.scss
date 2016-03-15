@@ -15,18 +15,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 ol, ul {
   list-style: none; }
 
-blockquote, q {
-  quotes: none; }
+// blockquote, q {
+//   quotes: none; }
 
-blockquote {
-  &:before, &:after {
-    content: '';
-    content: none; } }
+// blockquote {
+//   &:before, &:after {
+//     content: '';
+//     content: none; } }
 
-q {
-  &:before, &:after {
-    content: '';
-    content: none; } }
+// q {
+//   &:before, &:after {
+//     content: '';
+//     content: none; } }
 
 table {
   border-collapse: collapse;
